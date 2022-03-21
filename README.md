@@ -1,5 +1,3 @@
-# Online-Restaurant-Team12
-
 ## You can check the app [here](https://gsg-cf05.github.io/Online-Restaurant-Team12/)
 ------------------------------------------------
 ## Name of Project: 💡***Tasty***
@@ -11,7 +9,6 @@
 - User journey
 - User stories
 - wireframes
-- Design 
 - How install the install locally
 - Technology Used
 - Team members
