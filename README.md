@@ -1,6 +1,4 @@
-## You can check the app [here](https://gsg-cf05.github.io/Online-Restaurant-Team12/)
-------------------------------------------------
-## Name of Project: 💡***Tasty***
+##  💡[***Tasty***](https://gsg-cf05.github.io/Online-Restaurant-Team12/)
 -----------------------------------------------
 
 ## ✧ Contents of Readme File:
@@ -16,7 +14,7 @@
 ------------------------------------------------------
 
 ## ✧ Description of our website:
-    Tasty is an online restaurant app that made to make it easier for the customer to order food by showing the menu of the restaurant. In this app, customers can browse the menu, which includes many types of food, drinks, and desserts, choose the best food for them, order, and pay for it through the app.
+Tasty is an online restaurant app that made to make it easier for the customer to order food by showing the menu of the restaurant. In this app, customers can browse the menu, which includes many types of food, drinks, and desserts, choose the best food for them, order, and pay for it through the app.
 
 ------------------------------------------------------
 
