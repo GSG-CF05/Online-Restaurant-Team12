@@ -12,7 +12,6 @@
   list-style: none;
   text-transform: capitalize;
   transition: 0.2s linear;
-
 }
 
 ul {
@@ -26,7 +25,6 @@ button,
 input {
   border: none;
   outline: none;
-
 }
 
 /* gobal varible  */
@@ -105,7 +103,7 @@ label.logo {
   font-weight: bold;
 }
 
- /* selector style  */
+/* selector style  */
 select {
   background-color: var(--gold);
   border-radius: 16px;
@@ -116,7 +114,23 @@ select {
   border: none;
 }
 select option {
-    background-color: var(--light-bg-color);
+  background-color: var(--light-bg-color);
   color: var(--gold);
   border-radius: 20px;
+}
+
+@media (min-width: 415px) and (max-width: 768px) {
+  .Home-section {
+    background-position: center;
+  }
+  label.logo {
+    font-size: 40px;
+    padding-left: 50px;
+  }
+}
+@media (min-width: 769px) {
+  label.logo {
+    font-size: 40px;
+    padding-left: 50px;
+  }
 }
