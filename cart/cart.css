@@ -36,20 +36,11 @@ input {
   --icon-bg: #28251f;
 }
  /* selector style  */
-select {
-  background-color: var(--gold);
-  border-radius: 16px;
-  color: var(--light-bg-color);
-  font-weight: bold;
-  padding: 20px;
-  outline: none;
-  border: none;
-}
-select option {
-    background-color: var(--light-bg-color);
-  color: var(--gold);
-  border-radius: 20px;
-}
+ ::selection {
+    background-color: var(--gold);
+    color: var(--bg-color);
+    font-weight: bold;
+  }
 /* responsive section  */
 @media (min-width: 415px) and (max-width: 768px) {
 }
