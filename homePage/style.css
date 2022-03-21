@@ -24,7 +24,7 @@
   --shadow: 0 0 13px var(--icon-bg);
   --icon-bg: #28251f;
 }
- /* selector style  */
+/* selector style  */
 select {
   background-color: var(--gold);
   border-radius: 16px;
@@ -78,7 +78,7 @@ nav {
 .Home-section .home-btn {
   color: var(--white);
   font-family: var(--logo-font);
-  font-family:var(--playfair-disply-font);
+  font-family: var(--playfair-disply-font);
   padding: 20px 25px;
   border-radius: 30px;
   border: 2px solid var(--gold);
@@ -92,7 +92,7 @@ nav {
   font-size: 25px;
 }
 label.logo {
-  color:var(--white);
+  color: var(--white);
   font-size: 35px;
   line-height: 80px;
   padding: 0 100px;
@@ -214,7 +214,7 @@ ul {
 
 /*---------------------------------------------ipad------------------------------------------------*/
 
-@media (min-width: 415px) and (max-width: 768px){
+@media (min-width: 415px) and (max-width: 768px) {
   .heading {
     font-size: 3rem;
   }
@@ -266,12 +266,38 @@ ul {
     padding: 1.5rem 2rem;
   }
 
+  .about .row .content p {
+    font-size: 2.3rem;
+    text-align: left;
+    margin-left: 40px;
+  }
+  .about .row .image img {
+    width: 100%;
+    margin-left: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 15%;
+  }
 }
 /*-----------------------------------lab--------------------------------*/
 @media (min-width: 769px) {
+  .about .row .content p {
+    font-size: 1.2rem;
+    text-align: left;
+  }
   label.logo {
     font-size: 30px;
     padding-left: 30px;
+  }
+  .about .row .image {
+    flex: 1 1 5rem;
+  }
+  .about .row .image img {
+    width: 80%;
+    margin-left: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 15%;
   }
   .checkbtn {
     display: none;
@@ -292,4 +318,3 @@ ul {
     background-color: #00000000;
   }
 }
-
