@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@400;500;600&display=swap");
+
 /* gobable setting */
 * {
   padding: 0;
@@ -11,6 +12,21 @@
   list-style: none;
   text-transform: capitalize;
   transition: 0.2s linear;
+
+}
+
+ul {
+  list-style: none;
+  display: flex;
+}
+a {
+  text-decoration: none;
+}
+button,
+input {
+  border: none;
+  outline: none;
+
 }
 
 /* gobal varible  */
@@ -24,6 +40,7 @@
   --shadow: 0 0 13px var(--icon-bg);
   --icon-bg: #28251f;
 }
+
 /* selector style  */
 ::selection {
   background-color: var(--gold);
@@ -86,4 +103,20 @@ label.logo {
   line-height: 80px;
   padding: 0 100px;
   font-weight: bold;
+}
+
+ /* selector style  */
+select {
+  background-color: var(--gold);
+  border-radius: 16px;
+  color: var(--light-bg-color);
+  font-weight: bold;
+  padding: 20px;
+  outline: none;
+  border: none;
+}
+select option {
+    background-color: var(--light-bg-color);
+  color: var(--gold);
+  border-radius: 20px;
 }
