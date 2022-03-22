@@ -330,6 +330,16 @@ ul {
     transform: scale(0.9);
 }
 
+@media (max-width: 450px) {
+  .why-us .boxes .reason-box{
+    width: 200px;
+  }
+
+  .boxes{
+  padding: 15px;
+  width: 100%;
+  }
+}
 /*-----------------------------------lab--------------------------------*/
 @media (min-width: 769px){
   label.logo {
@@ -414,5 +424,15 @@ ul {
 .about .row .content h3 {
   font-size: 1rem;
   color: #fff;
+}
+ /* why choose us section  */
+ .why-us .boxes{
+  flex-direction: row;
+}
+.why-us .boxes .reason-box{
+ width: 300px;
+ height: 200px;
+ padding-top: 30px;
+ font-size: 20px;
 }
 }
