@@ -19,7 +19,7 @@
 ul {
   list-style: none;
   display: flex;
-}
+} 
 
 a {
   text-decoration: none;
@@ -330,7 +330,74 @@ ul {
     transform: scale(0.9);
 }
 
+/* start testimonail section  */
+.testimonaial-section{
+  padding: 10px 20px;
+  position: relative;
+  height:auto; 
+  background-color:var(--bg-color);
+  color: var(--gold);
+  border-bottom: 1px solid var(--gold);
+  border-top: 1px solid var(--gold);
+}
+.testimonaial-section .testimonail-content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: column;
+
+}
+.testimonaial-section .testimonail-content .single-testimonail{
+    background-color: var(--light-bg-color);
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 20px;
+    margin-left: 20px;
+    border: 1px solid var(--gold);
+    transition: transform 0.4s;
+    cursor: pointer;
+}
+.testimonaial-section .testimonail-content .single-testimonail:hover{
+   transform: translateY(-10px)
+}
+.testimonaial-section .testimonail-content .single-testimonail img{
+  border-radius: 50%;
+  width: 40%;
+  border: 4px solid var(--gold);
+}
+.testimonaial-section .single-testimonail .client-details ul{
+  align-items: center;
+  justify-content: center;
+}
+.testimonaial-section .single-testimonail .cleint-info .client-details{
+  padding: 15px;
+  line-height: 1.5;
+}
+.testimonaial-section .single-testimonail  .client-details span{
+  padding: 10px;
+}
+.testimonaial-section .single-testimonail .cleint-info .client-details h6,
+.testimonaial-section .single-testimonail .cleint-info .client-details span{
+   font-weight: 500;
+   text-transform: capitalize;
+}
+.testimonaial-section .single-testimonail .cleint-info p{
+  color: var(--white);
+  font-family: var(--playfair-disply-font);
+  line-height: 1.4;
+}
+.testimonaial-section .single-testimonail .cleint-info p i{
+   font-size: 24px;
+    color: var(--gold);
+    opacity: 0.4;
+    padding-left: 5px;
+}
+
 @media (max-width: 450px) {
+  .testimonaial-section .testimonail-content{
+    flex-wrap: wrap;
+  }
   .why-us .boxes .reason-box{
     width: 200px;
   }
@@ -341,7 +408,7 @@ ul {
   }
 }
 /*-----------------------------------lab--------------------------------*/
-@media (min-width: 769px){
+@media (min-width: 768px){
   label.logo {
     font-size: 30px;
     padding-left: 30px;
@@ -425,6 +492,7 @@ ul {
   font-size: 1rem;
   color: #fff;
 }
+ 
  /* why choose us section  */
  .why-us .boxes{
   flex-direction: row;
@@ -434,5 +502,15 @@ ul {
  height: 200px;
  padding-top: 30px;
  font-size: 20px;
+}
+.testimonaial-section .testimonail-content{
+  font-size: 20px;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+.testimonaial-section .testimonail-content .single-testimonail .cleint-info p{
+line-height: 1.8;
+ font-size: 18px;
+ width: 100%;
 }
 }
