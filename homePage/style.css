@@ -15,14 +15,14 @@
   transition: 0.2s linear;
 }
 
-/* ul {
+ul {
   list-style: none;
   display: flex;
 }
 
 a {
   text-decoration: none;
-} */
+}
 button,
 input {
   border: none;
@@ -46,20 +46,6 @@ input {
   background-color: var(--gold);
   color: var(--bg-color);
   font-weight: bold;
-}
-select {
-  background-color: var(--gold);
-  border-radius: 16px;
-  color: var(--light-bg-color);
-  font-weight: bold;
-  padding: 20px;
-  outline: none;
-  border: none;
-}
-select option {
-  background-color: var(--light-bg-color);
-  color: var(--gold);
-  border-radius: 20px;
 }
 
 html {
@@ -233,6 +219,84 @@ ul {
   }
 
 }
+/* start why-choose-us section  */
+.why-us {
+  background-color: var(--bg-color);
+  text-align: center;
+  padding: 30px;
+  height: 300px;
+  border-bottom: 1px solid var(--gold);
+  position: relative;
+  height:auto; 
+  font-size: 50px;
+}
+.why-us h2 {
+  position: relative;
+  color: var(--gold);
+  margin-bottom: 1.5rem;
+  font-size: 22px;
+  font-family: var(--playfair-disply);
+}
+
+.boxes {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-direction: column;
+  
+}
+.boxes .reason-box {
+  background-color: var(--light-bg-color);
+  color: var(--white);
+  width: 400px;
+  height: 200px;
+  padding-top: 10px;
+  font-family: var(--playfair-disply-font);
+  border: none;
+  font-size: 20px;  
+  margin: 20px;
+}
+.boxes .reason-box i {
+  color: var(--gold);
+  font-size: 40px;
+  padding: 20px;
+}
+.boxes .reason-box h4,
+.boxes .reason-box h5 {
+  font-size: 22px;
+  padding-bottom: 10px;
+  margin: 5px;
+  transition: transform 0.5s;
+}
+.boxes .reason-box:hover {
+    transform: scale(0.9);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*-----------------------------------lab--------------------------------*/
 @media (min-width: 769px){
   label.logo {
