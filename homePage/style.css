@@ -464,19 +464,150 @@ ul {
     opacity: 0.4;
     padding-left: 5px;
 }
+/* start foooter section */
+.footer {
+  background-color: var(--light-bg-color);
+  border-bottom: 1px solid var(--gold);
+  width: auto;
+ } 
+ .footer .row{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   padding: 0 30px 0 30px;
+ }
+ 
+ .footer .contact,
+ .footer .services,
+ .footer .newslatter{
+   padding: 20px;
+   margin-right: 20px;
+ }
+ .footer .contact  h2 {
+   margin-top: 20px;
+ }
+ .footer .contact  h2 a,
+ .footer .services h2,
+ .footer .newslatter h2
+ {
+   color: var(--white);
+ }
+ .footer .contact .contact-info .location,
+ .footer .contact .contact-info .phone,
+ .footer .contact .contact-info .email{
+   padding: 10px 0 10px 0;
+   font-size: 20px;
+   color: var(--white);
+ }
+ .footer .contact .contact-info  i{
+   padding: 5px;
+   font-size: 20px;
+   color: var(--gold);
+ }
+ 
+ .socail-icons ul li {
+   margin-right: 10px;
+   background-color: var(--bg-color);
+   border-radius: 50%;
+   padding: 10px;
+ }
+ .socail-icons ul li a i{
+   color: var(--gold);
+   font-size: 24px;
+ }
+ .footer .services .services-menu{
+   flex-direction: column;
+   padding-top: 10px
+ }
+ .footer .services .services-menu li i{
+   color: var(--gold);
+   padding-top: 10px;
+   padding-right: 10px;
+ }
+ .footer .services .services-menu li {
+   padding: 15px;
+   font-size: 18px;
+   color: var(--white);
+   font-family: var(--playfair-disply-font);
+   text-transform: capitalize;
+ }
+ 
+ /* .footer .newslatter{
+   padding: 20px;
+ } */
+ .footer .newslatter p{
+   font-size: 20px;
+   color: var(--white);
+   line-height: 1.5;
+   padding: 10px;
+ }
+ 
+ .footer .newslatter form input {
+   width: calc(100% - 110px);
+   border: 1px solid var(--gold);
+   border-radius: 20px;
+   background-color:var(--icon-bg);
+   height: 45px;
+   font-weight: bold;
+   font-size: 18px;
+   padding-left: 10px;
+   color: var(--white);
+ }
+ .footer .newslatter form input:focus{
+     border: 1px solid var(--gold);
+ }
+ .footer .newslatter form button {
+   background-color: var(--gold);
+   color: var(--white);
+   border-radius: 24px;
+   font-size: 18px;
+   padding: 12px;
+   margin-top: 15px;
+   font-weight: 500;
+   align-items: flex-start;
+   text-align: center;
+ }
+ /* copyrigth  */
+ .credits {
+   background-color: var(--bg-color);
+   padding: 30px;
+   font-size: 26px;
+   text-align: center;
+   color: var(--white);
+   line-height: 1.5;
+   font-family: var(--playfair-disply-font);
+   font-weight: 400;
+   border-top: 1px solid var(--gold);
+ }
+ 
+ .credits p span {
+   color: var(--gold);
+   font-family: var(--logo-font);
+ }
+ .footer-logo {
+   font-family: var(--logo-font);
+ } 
+ 
+ .footer .newslatter form input:focus::placeholder {
+   opacity: 0;
+   transition: 0.4s;
+ 
+ }  
 
 @media (max-width: 450px) {
-  .testimonaial-section .testimonail-content{
+  .testimonaial-section .testimonail-content,
+  .footer .row{
     flex-wrap: wrap;
   }
   .why-us .boxes .reason-box{
     width: 200px;
   }
-
   .boxes{
   padding: 15px;
   width: 100%;
   }
+ 
 }
 /*-----------------------------------lab--------------------------------*/
 @media (min-width: 768px){
@@ -574,6 +705,7 @@ ul {
  padding-top: 30px;
  font-size: 20px;
 }
+ /* our chef section  */
 .our-chef .row{
   align-items: center;
   display: flex;
@@ -586,7 +718,6 @@ ul {
 .chef-item .chef-item-info{
   margin-top: -20px;
 }
-}
 .testimonaial-section .testimonail-content{
   font-size: 20px;
   flex-wrap: nowrap;
@@ -597,4 +728,33 @@ line-height: 1.8;
  font-size: 18px;
  width: 100%;
 
+}
+/* start footer section  */
+.footer .row .newslatter {
+  width: 40%;
+  line-height: 2;
+}
+.footer .row .services{
+  margin-top: 20px;
+}
+.footer .row .services .services-menu li{
+    padding: 5px;
+}
+
+.footer .row,
+.why-us .boxes{
+  flex-direction: row;
+}
+.footer .newslatter form input{
+  width: 300px;
+}
+.footer .newslatter form button{
+   margin-left: 10px;
+}
+ .footer .row .newslatter{
+   line-height: 0.8;
+ }
+ .footer .row {
+  margin: 0 auto;
+ } 
 }
