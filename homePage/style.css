@@ -5,15 +5,16 @@
 
 /* gobable setting */
 * {
-  scroll-behavior: smooth;
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
   text-transform: capitalize;
   transition: 0.2s linear;
 }
+
 /* ul {
   list-style: none;
   display: flex;
@@ -80,7 +81,7 @@ html::-webkit-scrollbar-thumb {
   border-radius: 5rem;
 }
 /* ------------------------------------Section Home page ---------------------------*/
- .Home-section {
+.Home-section {
   font-family: Playfair Display;
   height: 100vh;
   width: 100%;
@@ -179,55 +180,81 @@ ul {
   padding-bottom: 3.5rem;
   font-size: 2rem;
 }
+@media (min-width: 415px) and (max-width: 768px){
+  .heading {
+    font-size: 3rem;
+  }
+  .Home-section {
+    background-position: center;
+  }
+  label.logo {
+    font-size: 40px;
+    padding-left: 50px;
+  }
+  nav ul li a {
+    font-size: 30px;
+  }
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  a:hover,
+  a.active {
+    background: none;
+    color: rgba(197, 157, 95, 1);
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
 
-.heading span {
-  color: rgba(197, 157, 95, 1);
-  text-transform: uppercase;
+  html {
+    font-size: 55%;
+  }
+
+  .header {
+    padding: 1.5rem 2rem;
+  }
+
 }
-.home {
-  min-height: 50vh;
-  display: flex;
-  align-items: center;
-}
-#About_us {
-  padding: 90px;
-  background: rgba(26, 24, 20, 1);
-  padding: 30px;
-}
-.home .content {
-  max-width: 60rem;
-}
-.about .row {
-  display: flex;
-  align-items: center;
-  background: rgba(54, 51, 44, 1);
-  flex-wrap: wrap;
-}
-.about .row .image {
-  flex: 1 1 20rem;
-}
-.about .row .image img {
-  width: 70%;
-  margin-left: 55px;
-  margin-top: 15px;
-  margin-bottom: 0px;
-  border-radius: 10%;
-}
-.about .row .content {
-  flex: 1 1 45rem;
-  padding: 12px;
-}
-.about .row .content p {
-  font-size: 1.3rem;
-  color: rgb(255, 255, 255);
-  padding: 1rem 0;
-  line-height: 1.8;
-  text-align: center;
-}
-.para1 {
-  font-size: 30px;
-}
-.about .row .content h3 {
-  font-size: 1rem;
-  color: #fff;
+/*-----------------------------------lab--------------------------------*/
+@media (min-width: 769px){
+  label.logo {
+    font-size: 30px;
+    padding-left: 30px;
+  }
+  .checkbtn {
+    display: none;
+  }
+  nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  nav ul li a {
+    font-size: 14px;
+  }
+  ul {
+    width: 78%;
+    height: 13vh;
+    position: initial;
+    transition: all 0.5s;
+    background-color: #00000000;
+  }
 }
