@@ -1,7 +1,170 @@
-@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* google fonts  */
 @import url("https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap");
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@400;500;600&display=swap");
+
+/* gobable setting */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+}
+a {
+  text-decoration: none;
+}
+button,
+input {
+  border: none;
+  outline: none;
+}
+
+/* gobal varible  */
+:root {
+  --bg-color: #0c0b09;
+  --light-bg-color: #1a1814;
+  --gold: #cda45e;
+  --white: #fff;
+  --playfair-disply-font: "Playfair Display", serif;
+  --logo-font: "Lobster", cursive;
+  --shadow: 0 0 13px var(--icon-bg);
+  --icon-bg: #28251f;
+}
+ /* selector style  */
+
+::selection {
+  background-color: var(--gold);
+  color: var(--bg-color);
+  font-weight: bold;
+}
+select {
+  background-color: var(--gold);
+  border-radius: 16px;
+  color: var(--light-bg-color);
+  font-weight: bold;
+  padding: 20px;
+  outline: none;
+  border: none;
+}
+select option {
+  background-color: var(--light-bg-color);
+  color: var(--gold);
+  border-radius: 20px;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-padding-top: 9rem;
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--bg-color);
+  border-radius: 5rem;
+}
+/* ------------------------------------Section Home page ---------------------------*/
+.Home-section {
+  font-family: var(--playfair-disply-font);
+  height: 100vh;
+  width: 100%;
+  background: url(../image/homePage.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+nav {
+  position: fixed;
+  height: 80px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  justify-content: space-between;
+}
+.Home-section .home-btn {
+  color: var(--white);
+  font-family: var(--logo-font);
+  font-family:var(--playfair-disply-font);
+  padding: 20px 25px;
+  border-radius: 30px;
+  border: 2px solid var(--gold);
+  width: fit-content;
+  position: absolute;
+  text-transform: uppercase;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 12%;
+  background-color: rgba(180, 138, 75, 0.315);
+  font-size: 25px;
+}
+label.logo {
+  color:var(--white);
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+  font-size: 40px;
+  padding-left: 50px;
+}
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+nav ul li {
+  display: block;
+  margin: 70px 0;
+  line-height: 30px;
+}
+nav ul li a {
+  font-size: 30px;
+  color: var(--white);
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+#check:checked ~ ul {
+  left: 0;
+}
+a:hover {
+  background: var(--gold);
+  transition: 0.5s;
+}
+.checkbtn {
+  font-size: 30px;
+  color: var(--white);
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: block;
+}
+#check {
+  display: none;
+}
+a:hover,
+a.active {
+  background: none;
+  color: var(--gold);
+}
+ul {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  top: 80px;
+  left: -100%;
+  text-align: center;
+  transition: all 0.5s;
+}
+
