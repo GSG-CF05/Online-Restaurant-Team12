@@ -5,7 +5,7 @@
 
 /* gobable setting */
 * {
-  scroll-behavior: smooth;
+
   padding: 0;
   margin: 0;
   text-decoration: none;
@@ -13,6 +13,7 @@
   box-sizing: border-box;
   text-transform: capitalize;
   transition: 0.2s linear;
+  scroll-behavior: smooth;
 }
 
 /* ul {
@@ -82,7 +83,7 @@ html::-webkit-scrollbar-thumb {
 }
 /* ------------------------------------Section Home page ---------------------------*/
  .Home-section {
-  font-family: Playfair Display;
+  font-family: var(--playfair-disply-font);
   height: 100vh;
   width: 100%;
   background: url("../image/homePage.jpg");
@@ -183,6 +184,58 @@ ul {
   text-transform: uppercase;
   padding-bottom: 3.5rem;
   font-size: 2rem;
+}
+
+.heading span {
+  color: rgba(197, 157, 95, 1);
+  text-transform: uppercase;
+}
+.home {
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+}
+#About_us {
+  padding: 90px;
+  background: rgba(26, 24, 20, 1);
+  padding: 30px;
+}
+.home .content {
+  max-width: 60rem;
+}
+.about .row {
+  display: flex;
+  align-items: center;
+  background: rgba(54, 51, 44, 1);
+  flex-wrap: wrap;
+}
+.about .row .image {
+  flex: 1 1 20rem;
+}
+.about .row .image img {
+  width: 70%;
+  margin-left: 55px;
+  margin-top: 15px;
+  margin-bottom: 0px;
+  border-radius: 10%;
+}
+.about .row .content {
+  flex: 1 1 45rem;
+  padding: 12px;
+}
+.about .row .content p {
+  font-size: 1.3rem;
+  color: rgb(255, 255, 255);
+  padding: 1rem 0;
+  line-height: 1.8;
+  text-align: center;
+}
+.para1 {
+  font-size: 30px;
+}
+.about .row .content h3 {
+  font-size: 1rem;
+  color: #fff;
 }
 
 /*---------------------------------------------ipad------------------------------------------------*/
