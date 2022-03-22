@@ -15,6 +15,14 @@
   transition: 0.2s linear;
 }
 
+/* ul {
+  list-style: none;
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+} */
 button,
 input {
   border: none;
@@ -74,7 +82,7 @@ html::-webkit-scrollbar-thumb {
 }
 /* ------------------------------------Section Home page ---------------------------*/
 .Home-section {
-  font-family: var(--playfair-disply-font);
+  font-family: Playfair Display;
   height: 100vh;
   width: 100%;
   background: url("../image/homePage.jpg");
@@ -90,12 +98,12 @@ nav {
   justify-content: space-between;
 }
 .Home-section .home-btn {
-  color: var(--white);
-  font-family: var(--logo-font);
-  font-family:var(--playfair-disply-font);
+  color: #ffffff;
+  font-family: Lobster;
+  font-family: Playfair Display;
   padding: 20px 25px;
   border-radius: 30px;
-  border: 2px solid var(--gold);
+  border: 2px solid rgba(197, 157, 95, 1);
   width: fit-content;
   position: absolute;
   text-transform: uppercase;
@@ -106,7 +114,7 @@ nav {
   font-size: 25px;
 }
 label.logo {
-  color:var(--white);
+  color: white;
   font-size: 35px;
   line-height: 80px;
   padding: 0 100px;
@@ -125,7 +133,7 @@ nav ul li {
 }
 nav ul li a {
   font-size: 30px;
-  color: var(--white);
+  color: white;
   padding: 7px 13px;
   border-radius: 3px;
   text-transform: uppercase;
@@ -134,12 +142,12 @@ nav ul li a {
   left: 0;
 }
 a:hover {
-  background: var(--gold);
+  background: rgba(197, 157, 95, 1);
   transition: 0.5s;
 }
 .checkbtn {
   font-size: 30px;
-  color: var(--white);
+  color: white;
   float: right;
   line-height: 80px;
   margin-right: 40px;
@@ -152,7 +160,7 @@ a:hover {
 a:hover,
 a.active {
   background: none;
-  color: var(--gold);
+  color: rgba(197, 157, 95, 1);
 }
 ul {
   position: fixed;
@@ -164,8 +172,14 @@ ul {
   text-align: center;
   transition: all 0.5s;
 }
-
-
+/* ---------------------------------- Section About Us ----------------------------------*/
+.heading {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  padding-bottom: 3.5rem;
+  font-size: 2rem;
+}
 @media (min-width: 415px) and (max-width: 768px){
   .heading {
     font-size: 3rem;
