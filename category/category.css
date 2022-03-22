@@ -1,3 +1,4 @@
+/* google fonts  */
 @import url("https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@400;500;600&display=swap");
@@ -102,8 +103,12 @@ label.logo {
   padding: 0 100px;
   font-weight: bold;
 }
-
-/* selector style  */
+ /* selector style  */
+ ::selection {
+    background-color: var(--gold);
+    color: var(--bg-color);
+    font-weight: bold;
+  }
 select {
   background-color: var(--gold);
   border-radius: 16px;
@@ -134,3 +139,6 @@ select option {
     padding-left: 50px;
   }
 }
+
+}
+
