@@ -41,8 +41,23 @@ input {
     color: var(--bg-color);
     font-weight: bold;
   }
+select {
+  background-color: var(--gold);
+  border-radius: 16px;
+  color: var(--light-bg-color);
+  font-weight: bold;
+  padding: 20px;
+  outline: none;
+  border: none;
+}
+select option {
+    background-color: var(--light-bg-color);
+  color: var(--gold);
+  border-radius: 20px;
+}
 /* responsive section  */
 @media (min-width: 415px) and (max-width: 768px) {
 }
 @media (min-width: 769px) {
 }
+
