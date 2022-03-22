@@ -98,7 +98,15 @@ label.logo {
 }
 /* responsive section  */
 @media (min-width: 415px) and (max-width: 768px) {
+  .Home-section {
+    background-position: center;}
+  label.logo {
+    font-size: 40px;
+    padding-left: 50px;}
 }
 @media (min-width: 769px) {
+  label.logo {
+    font-size: 40px;
+    padding-left: 50px;}
 }
 
