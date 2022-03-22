@@ -13,6 +13,7 @@
   box-sizing: border-box;
   text-transform: capitalize;
   transition: 0.2s linear;
+  scroll-behavior: smooth;
 }
 
 ul {
@@ -40,7 +41,7 @@ input {
   --shadow: 0 0 13px var(--icon-bg);
   --icon-bg: #28251f;
 }
- /* selector style  */
+/* selector style  */
 
 ::selection {
   background-color: var(--gold);
@@ -67,8 +68,8 @@ html::-webkit-scrollbar-thumb {
   border-radius: 5rem;
 }
 /* ------------------------------------Section Home page ---------------------------*/
-.Home-section {
-  font-family: Playfair Display;
+ .Home-section {
+  font-family: var(--playfair-disply-font);
   height: 100vh;
   width: 100%;
   background: url("../image/homePage.jpg");
@@ -84,6 +85,9 @@ nav {
   justify-content: space-between;
 }
 .Home-section .home-btn {
+  color: var(--white);
+  font-family: var(--logo-font);
+  font-family: var(--playfair-disply-font);
   color: #ffffff;
   font-family: Lobster;
   font-family: Playfair Display;
@@ -100,6 +104,7 @@ nav {
   font-size: 25px;
 }
 label.logo {
+  color: var(--white);
   color: white;
   font-size: 35px;
   line-height: 80px;
@@ -165,6 +170,58 @@ ul {
   text-transform: uppercase;
   padding-bottom: 3.5rem;
   font-size: 2rem;
+}
+
+.heading span {
+  color: rgba(197, 157, 95, 1);
+  text-transform: uppercase;
+}
+.home {
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+}
+#About_us {
+  padding: 90px;
+  background: rgba(26, 24, 20, 1);
+  padding: 30px;
+}
+.home .content {
+  max-width: 60rem;
+}
+.about .row {
+  display: flex;
+  align-items: center;
+  background: rgba(54, 51, 44, 1);
+  flex-wrap: wrap;
+}
+.about .row .image {
+  flex: 1 1 20rem;
+}
+.about .row .image img {
+  width: 70%;
+  margin-left: 55px;
+  margin-top: 15px;
+  margin-bottom: 0px;
+  border-radius: 10%;
+}
+.about .row .content {
+  flex: 1 1 45rem;
+  padding: 12px;
+}
+.about .row .content p {
+  font-size: 1.3rem;
+  color: rgb(255, 255, 255);
+  padding: 1rem 0;
+  line-height: 1.8;
+  text-align: center;
+}
+.para1 {
+  font-size: 30px;
+}
+.about .row .content h3 {
+  font-size: 1rem;
+  color: #fff;
 }
 @media (min-width: 415px) and (max-width: 768px){
   .heading {
@@ -273,35 +330,21 @@ ul {
     transform: scale(0.9);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*-----------------------------------lab--------------------------------*/
 @media (min-width: 769px){
   label.logo {
     font-size: 30px;
     padding-left: 30px;
+  }
+  .about .row .image {
+    flex: 1 1 5rem;
+  }
+  .about .row .image img {
+    width: 80%;
+    margin-left: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 15%;
   }
   .checkbtn {
     display: none;
@@ -321,4 +364,55 @@ ul {
     transition: all 0.5s;
     background-color: #00000000;
   }
+.heading span {
+  color: rgba(197, 157, 95, 1);
+  text-transform: uppercase;
+}
+.home {
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+}
+#About_us {
+  padding: 90px;
+  background: rgba(26, 24, 20, 1);
+  padding: 30px;
+}
+.home .content {
+  max-width: 60rem;
+}
+.about .row {
+  display: flex;
+  align-items: center;
+  background: rgba(54, 51, 44, 1);
+  flex-wrap: wrap;
+}
+.about .row .image {
+  flex: 1 1 20rem;
+}
+.about .row .image img {
+  width: 70%;
+  margin-left: 55px;
+  margin-top: 15px;
+  margin-bottom: 0px;
+  border-radius: 10%;
+}
+.about .row .content {
+  flex: 1 1 45rem;
+  padding: 12px;
+}
+.about .row .content p {
+  font-size: 1.3rem;
+  color: rgb(255, 255, 255);
+  padding: 1rem 0;
+  line-height: 1.8;
+  text-align: center;
+}
+.para1 {
+  font-size: 30px;
+}
+.about .row .content h3 {
+  font-size: 1rem;
+  color: #fff;
+}
 }
