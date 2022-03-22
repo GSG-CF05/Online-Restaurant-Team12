@@ -35,12 +35,12 @@ input {
   --shadow: 0 0 13px var(--icon-bg);
   --icon-bg: #28251f;
 }
- /* selector style  */
- ::selection {
-    background-color: var(--gold);
-    color: var(--bg-color);
-    font-weight: bold;
-  }
+/* selector style  */
+::selection {
+  background-color: var(--gold);
+  color: var(--bg-color);
+  font-weight: bold;
+}
 select {
   background-color: var(--gold);
   border-radius: 16px;
@@ -51,7 +51,7 @@ select {
   border: none;
 }
 select option {
-    background-color: var(--light-bg-color);
+  background-color: var(--light-bg-color);
   color: var(--gold);
   border-radius: 20px;
 }
@@ -99,14 +99,61 @@ label.logo {
 /* responsive section  */
 @media (min-width: 415px) and (max-width: 768px) {
   .Home-section {
-    background-position: center;}
+    background-position: center;
+  }
   label.logo {
     font-size: 40px;
-    padding-left: 50px;}
+    padding-left: 50px;
+  }
+  .foodcards-container {
+    display: grid;
+    column-gap: 2%;
+    grid-template-columns: auto auto;
+  }
+  .line-wrapper {
+    margin-bottom: 32px;
+  }
+  .foodcards-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 5%;
+  }
+  .dropdown-menu ul {
+    width: 57%;
+  }
 }
 @media (min-width: 769px) {
   label.logo {
     font-size: 40px;
-    padding-left: 50px;}
+    padding-left: 50px;
+  }
+  .category-btn {
+    width: 32%;
+  }
+  .foodcards-container {
+    display: grid;
+    column-gap: 1%;
+    grid-template-columns: auto auto auto;
+  }
+  .checkout-btn {
+    width: 33%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .time {
+    font-size: 28px;
+  }
+  .opening-days {
+    font-size: 32px;
+  }
+  .line-wrapper {
+    margin-bottom: 32px;
+  }
+  .opening-subtitle {
+    margin-bottom: 24px;
+  }
+  .dropdown-menu ul {
+    width: 31%;
+  }
 }
-
