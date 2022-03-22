@@ -15,13 +15,15 @@
   transition: 0.2s linear;
   scroll-behavior: smooth;
 }
- ul {
+
+ul {
   list-style: none;
+  display: flex;
 } 
 
 a {
   text-decoration: none;
-} 
+}
 button,
 input {
   border: none;
@@ -45,20 +47,6 @@ input {
   background-color: var(--gold);
   color: var(--bg-color);
   font-weight: bold;
-}
-select {
-  background-color: var(--gold);
-  border-radius: 16px;
-  color: var(--light-bg-color);
-  font-weight: bold;
-  padding: 20px;
-  outline: none;
-  border: none;
-}
-select option {
-  background-color: var(--light-bg-color);
-  color: var(--gold);
-  border-radius: 20px;
 }
 
 html {
@@ -288,6 +276,59 @@ ul {
   }
 
 }
+/* start why-choose-us section  */
+.why-us {
+  background-color: var(--bg-color);
+  text-align: center;
+  padding: 30px;
+  height: 300px;
+  border-bottom: 1px solid var(--gold);
+  position: relative;
+  height:auto; 
+  font-size: 50px;
+}
+.why-us h2 {
+  position: relative;
+  color: var(--gold);
+  margin-bottom: 1.5rem;
+  font-size: 22px;
+  font-family: var(--playfair-disply);
+}
+
+.boxes {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-direction: column;
+  
+}
+.boxes .reason-box {
+  background-color: var(--light-bg-color);
+  color: var(--white);
+  width: 400px;
+  height: 200px;
+  padding-top: 10px;
+  font-family: var(--playfair-disply-font);
+  border: none;
+  font-size: 20px;  
+  margin: 20px;
+}
+.boxes .reason-box i {
+  color: var(--gold);
+  font-size: 40px;
+  padding: 20px;
+}
+.boxes .reason-box h4,
+.boxes .reason-box h5 {
+  font-size: 22px;
+  padding-bottom: 10px;
+  margin: 5px;
+  transition: transform 0.5s;
+}
+.boxes .reason-box:hover {
+    transform: scale(0.9);
+}
 
 /* start testimonail section  */
 .testimonaial-section{
@@ -297,20 +338,8 @@ ul {
   background-color:var(--bg-color);
   color: var(--gold);
   border-bottom: 1px solid var(--gold);
+  border-top: 1px solid var(--gold);
 }
-.section-title {
-  margin-bottom: 50px;
-  padding-bottom: 15px;
-}
-.section-title h2{
-   font-size: 40px;
-   font-weight: 900;
-   text-transform: capitalize;
-   letter-spacing: 1px;
-   text-align: center;
-   padding: 30px;
-}
-
 .testimonaial-section .testimonail-content {
   display: flex;
   align-items: center;
@@ -339,7 +368,6 @@ ul {
 }
 .testimonaial-section .single-testimonail .client-details ul{
   align-items: center;
-   display: flex;
   justify-content: center;
 }
 .testimonaial-section .single-testimonail .cleint-info .client-details{
@@ -365,86 +393,7 @@ ul {
     opacity: 0.4;
     padding-left: 5px;
 }
-    /* testimonail section  */
- .testimonaial-section .testimonail-content{
-  font-size: 20px;
-  flex-wrap: nowrap;
-  flex-direction: row;
-}
-.testimonaial-section .testimonail-content .single-testimonail .cleint-info p{
-line-height: 1.8;
- font-size: 18px;
- width: 100%;
-}
 
-
-/*---------------------------------------------ipad------------------------------------------------*/
-
-@media (min-width: 415px) and (max-width: 768px) {
-  .heading {
-    font-size: 3rem;
-  }
-  .Home-section {
-    background-position: center;
-  }
-  label.logo {
-    font-size: 40px;
-    padding-left: 50px;
-  }
-  nav ul li a {
-    font-size: 30px;
-  }
-  .checkbtn {
-    display: block;
-  }
-  ul {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.8);
-    top: 80px;
-    left: -100%;
-    text-align: center;
-    transition: all 0.5s;
-  }
-  nav ul li {
-    display: block;
-    margin: 50px 0;
-    line-height: 30px;
-  }
-  nav ul li a {
-    font-size: 20px;
-  }
-  a:hover,
-  a.active {
-    background: none;
-    color: rgba(197, 157, 95, 1);
-  }
-  #check:checked ~ ul {
-    left: 0;
-  }
-
-  html {
-    font-size: 55%;
-  }
-
-  .header {
-    padding: 1.5rem 2rem;
-  }
-
-  .about .row .content p {
-    font-size: 2.3rem;
-    text-align: left;
-    margin-left: 40px;
-  }
-  .about .row .image img {
-    width: 100%;
-    margin-left: 20px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    border-radius: 15%;
-  }
-}
 @media (max-width: 450px) {
   .testimonaial-section .testimonail-content{
     flex-wrap: wrap;
@@ -544,7 +493,6 @@ line-height: 1.8;
   color: #fff;
 }
  
-}
  /* why choose us section  */
  .why-us .boxes{
   flex-direction: row;
@@ -554,4 +502,15 @@ line-height: 1.8;
  height: 200px;
  padding-top: 30px;
  font-size: 20px;
+}
+.testimonaial-section .testimonail-content{
+  font-size: 20px;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+.testimonaial-section .testimonail-content .single-testimonail .cleint-info p{
+line-height: 1.8;
+ font-size: 18px;
+ width: 100%;
+}
 }
