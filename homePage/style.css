@@ -1,3 +1,4 @@
+/* google fonts  */
 @import url("https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@400;500;600&display=swap");
@@ -8,11 +9,21 @@
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  text-decoration: none;
-  list-style: none;
-  text-transform: capitalize;
-  transition: 0.2s linear;
 }
+
+ul {
+  list-style: none;
+  display: flex;
+}
+a {
+  text-decoration: none;
+}
+button,
+input {
+  border: none;
+  outline: none;
+}
+
 /* gobal varible  */
 :root {
   --bg-color: #0c0b09;
@@ -25,6 +36,12 @@
   --icon-bg: #28251f;
 }
  /* selector style  */
+
+::selection {
+  background-color: var(--gold);
+  color: var(--bg-color);
+  font-weight: bold;
+}
 select {
   background-color: var(--gold);
   border-radius: 16px;
