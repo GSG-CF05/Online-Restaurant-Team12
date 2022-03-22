@@ -5,19 +5,23 @@
 
 /* gobable setting */
 * {
+  scroll-behavior: smooth;
   padding: 0;
   margin: 0;
+  text-decoration: none;
+  list-style: none;
   box-sizing: border-box;
-  scroll-behavior: smooth;
+  text-transform: capitalize;
+  transition: 0.2s linear;
 }
-
-ul {
+/* ul {
   list-style: none;
   display: flex;
 }
+
 a {
   text-decoration: none;
-}
+} */
 button,
 input {
   border: none;
@@ -76,11 +80,11 @@ html::-webkit-scrollbar-thumb {
   border-radius: 5rem;
 }
 /* ------------------------------------Section Home page ---------------------------*/
-.Home-section {
-  font-family: var(--playfair-disply-font);
+ .Home-section {
+  font-family: Playfair Display;
   height: 100vh;
   width: 100%;
-  background: url(../image/homePage.jpg);
+  background: url("../image/homePage.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -93,12 +97,12 @@ nav {
   justify-content: space-between;
 }
 .Home-section .home-btn {
-  color: var(--white);
-  font-family: var(--logo-font);
-  font-family:var(--playfair-disply-font);
+  color: #ffffff;
+  font-family: Lobster;
+  font-family: Playfair Display;
   padding: 20px 25px;
   border-radius: 30px;
-  border: 2px solid var(--gold);
+  border: 2px solid rgba(197, 157, 95, 1);
   width: fit-content;
   position: absolute;
   text-transform: uppercase;
@@ -109,7 +113,7 @@ nav {
   font-size: 25px;
 }
 label.logo {
-  color:var(--white);
+  color: white;
   font-size: 35px;
   line-height: 80px;
   padding: 0 100px;
@@ -128,7 +132,7 @@ nav ul li {
 }
 nav ul li a {
   font-size: 30px;
-  color: var(--white);
+  color: white;
   padding: 7px 13px;
   border-radius: 3px;
   text-transform: uppercase;
@@ -137,12 +141,12 @@ nav ul li a {
   left: 0;
 }
 a:hover {
-  background: var(--gold);
+  background: rgba(197, 157, 95, 1);
   transition: 0.5s;
 }
 .checkbtn {
   font-size: 30px;
-  color: var(--white);
+  color: white;
   float: right;
   line-height: 80px;
   margin-right: 40px;
@@ -155,7 +159,7 @@ a:hover {
 a:hover,
 a.active {
   background: none;
-  color: var(--gold);
+  color: rgba(197, 157, 95, 1);
 }
 ul {
   position: fixed;
@@ -167,4 +171,63 @@ ul {
   text-align: center;
   transition: all 0.5s;
 }
+/* ---------------------------------- Section About Us ----------------------------------*/
+.heading {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  padding-bottom: 3.5rem;
+  font-size: 2rem;
+}
 
+.heading span {
+  color: rgba(197, 157, 95, 1);
+  text-transform: uppercase;
+}
+.home {
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+}
+#About_us {
+  padding: 90px;
+  background: rgba(26, 24, 20, 1);
+  padding: 30px;
+}
+.home .content {
+  max-width: 60rem;
+}
+.about .row {
+  display: flex;
+  align-items: center;
+  background: rgba(54, 51, 44, 1);
+  flex-wrap: wrap;
+}
+.about .row .image {
+  flex: 1 1 20rem;
+}
+.about .row .image img {
+  width: 70%;
+  margin-left: 55px;
+  margin-top: 15px;
+  margin-bottom: 0px;
+  border-radius: 10%;
+}
+.about .row .content {
+  flex: 1 1 45rem;
+  padding: 12px;
+}
+.about .row .content p {
+  font-size: 1.3rem;
+  color: rgb(255, 255, 255);
+  padding: 1rem 0;
+  line-height: 1.8;
+  text-align: center;
+}
+.para1 {
+  font-size: 30px;
+}
+.about .row .content h3 {
+  font-size: 1rem;
+  color: #fff;
+}
