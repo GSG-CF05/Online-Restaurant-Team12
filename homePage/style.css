@@ -209,7 +209,9 @@ a.active {
   padding-bottom: 3.5rem;
   font-size: 2rem;
 }
-
+.about{
+  border-top:1px solid var(--gold);;
+}
 .heading span {
   color: rgba(197, 157, 95, 1);
   text-transform: uppercase;
@@ -241,7 +243,7 @@ a.active {
   margin-left: 55px;
   margin-top: 15px;
   margin-bottom: 0px;
-  border-radius: 10%;
+  border-radius: 10% ;
 }
 .about .row .content {
   flex: 1 1 45rem;
@@ -756,7 +758,9 @@ margin-bottom: 18px;
   .header {
     padding: 1.5rem 2rem;
   }
-
+.abot{
+  margin: 0px;
+}
   .about .row .content p {
     font-size: 2.3rem;
     text-align: left;
@@ -819,6 +823,9 @@ margin-bottom: 18px;
     transition: all 0.5s;
     background-color: #00000000;
   }
+  .heading{
+    padding:1%;
+  }
 .heading span {
   color: rgba(197, 157, 95, 1);
   text-transform: uppercase;
@@ -829,9 +836,9 @@ margin-bottom: 18px;
   align-items: center;
 }
 #About_us {
-  padding: 90px;
+  padding: 0px;
   background: rgba(26, 24, 20, 1);
-  padding: 30px;
+  padding-bottom: 10px;
 }
 .home .content {
   max-width: 60rem;
@@ -850,7 +857,9 @@ margin-bottom: 18px;
   margin-left: 55px;
   margin-top: 15px;
   margin-bottom: 0px;
-  border-radius: 10%;
+  border-radius: 10% ;   
+  border: 2px solid var(--gold);
+
 }
 .about .row .content {
   flex: 1 1 45rem;
