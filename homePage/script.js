@@ -1,4 +1,7 @@
-//! declaration 
+
+
+// slider section 
+// ! declaration 
 let preIcon = document.querySelector('.previous-icon')
 let afterIcon = document.querySelector('.after-icon')
 let slides = document.getElementsByClassName("slider")
@@ -26,3 +29,5 @@ preIcon.addEventListener('click', () => {
 afterIcon.addEventListener('click', () => {
   plusSlides(1)
 })
+ 
+

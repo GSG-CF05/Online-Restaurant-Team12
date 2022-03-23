@@ -32,26 +32,20 @@
         <label for="check" class="checkbtn">
           <i class="fas fa-bars"></i>
         </label>
-        <label class="logo">Tasty</label>
+        <label class="logo logo-heading">Tasty</label>
         <ul class="nav-menu">
-          <li><a class="active" href="#">Home</a></li>
+          <li><a class="active" href="#home">Home</a></li>
           <li><a href="#About_us">About Us</a></li>
-          <li><a href="#">Spical Offer</a></li>
-          <li><a href="#">Appointments</a></li>
-          <li><a href="#why-us">Why Us</a></li>
-          <li><a href="#our-chef">Our Chef</a></li>
-          <li><a href="#testimonail">Testionail</a></li>
-          <li><a href="#contact-us">Contact Us</a></li>
+          <li><a href="#Spical Offer">Spical Offer</a></li>
+          <li><a href="#Appointments">Appointments</a></li>
+          <li><a href="#">Why Us</a></li>
+          <li><a href="#">Contact Us</a></li>
         </ul>
       </nav>
     </header>
-    <section class="Home-section">
-     <div class="content">
-      <h1 class="heading-logo">Testy Restaurant</h1>
-      <h1> Welcome to our restaurant</h1>
-      <a href="./category/category.html" class="home-btn">our menu</a>
-     </div>
-  
+    <section class="Home-section" id="home">
+      <a href="../Category/index.html" class="home-btn">our menu</a>
+      <!-- <h1 id="titleApp">welcome in Tasty Restaurant</h1>  -->
     </section>
 
 <!-- about section starts  -->
@@ -74,7 +68,9 @@
 <!-- special dishes for the week section starts-->
 <section class="special-section" id="Spical Offer">
     <div class="special-container">
-      <p class="special-paragraph">Special for This Week</p>
+      <div class="section-title">
+        <h2> Special for <span>This Week</span></h2>
+       </div>
 
       <div class="slider">
         <img
@@ -116,7 +112,7 @@
 <section class="opening-section" id="Appointments">
   <img class="opening-img" src="./image/opening-image.jpg" alt="" />
   <div class="opening-overlay">
-    <p class="opening-heading">Opening Hours</p>
+    <p class="opening-heading">Opening <span>Hours<</span>/p>
     <p class="opening-subtitle">call for your order</p>
 
     <div class="line-wrapper">
@@ -145,7 +141,7 @@
     <section class="why-us" id="why-choose-our-restaurant">
       <div class="container">
         <div class="section-title">
-          <h2>Why Choose Our Restaurant?</h2>
+          <h2>Why Choose <span>Our Restaurant?</span></h2>
         </div>
        
         <div class="boxes">
@@ -173,7 +169,7 @@
 <section class="our-chef">
 <div class="container">
 <div class="section-title">
-  <h2>Our Chef</h2>
+  <h2>Our <span>Chef</span></h2>
 </div>
 <div class="row">
   <div class="chef-item">
@@ -205,7 +201,7 @@
 <section class="testimonaial-section">
   <div class="container">
     <div class="section-title">
-      <h2>What client says about us ?</h2>
+      <h2>What client <span>says about us</span> ?</h2>
     </div>
     <div class="testimonail-content">
      <div class="single-testimonail">
@@ -278,21 +274,21 @@
   </div>
 </section>
 <!-- start footer section  -->
-<footer class="footer" id="contact-us">
-  <div class="row">
-    <div class="contact">
-      <h2 class="logo footer-logo">
-        <a href="#home">Testy</a>
-      </h2>
-      <div class="contact-info">
-        <div class="location">
-          <i class="fa-solid fa-location-dot"></i>
-          <span>A108 Adam Street NY 535022, USA</span>
-        </div>
-        <div class="phone">
-          <i class="fa-solid fa-phone"></i>
-          <span>Phone: +1 5589 55488 55</span>
-        </div>
+<footer class="footer">
+<div class="row">
+  <div class="contact">
+    <h2 class="logo footer-logo">
+      <a href="#home">Testy</a>
+    </h2>
+    <div class="contact-info">
+      <div class="location">
+        <i class="fa-solid fa-location-dot"></i>
+        <span>A108 Adam Street NY 535022, USA</span>
+      </div>
+      <div class="phone">
+        <i class="fa-solid fa-phone"></i>
+        <span>Phone: +1 5589 55488 55</span>
+      </div>
       <div class="email">
         <i class="fa-solid fa-envelope"></i>
         <span>Email: info@example.com</span>
@@ -369,5 +365,9 @@
   <p>Designed by <span>Team 12 </span></p>
 </div>
 </footer>
+<!-- scroll top button  -->
+<!-- <button type="submit" class="scroll-top" id="scroll-top">
+  <i class="fa-solid fa-arrow-up"></i> --> -->
+<!-- </button> 
   </body>
 </html>
