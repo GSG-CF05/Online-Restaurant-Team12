@@ -54,21 +54,29 @@ input {
    padding: 40px;
    color: var(--gold);
 }
+.section-title h2 span{
+   color: var(--white);
+}
 
 
 html::-webkit-scrollbar {
-  width: 0.8rem;
+  width: 0.9rem;
 }
 
 html::-webkit-scrollbar-track {
-  background: transparent;
+  background: var(--gold);
 }
 
 html::-webkit-scrollbar-thumb {
-  background: var(--bg-color);
+  background: var(--light-bg-color);
   border-radius: 5rem;
 }
 /* ------------------------------------Section Home page ---------------------------*/
+header.sticky{
+  background-color: var(--bg-color);
+  border-bottom: 1px solid var(--gold);
+  opacity: 1;
+}
  .Home-section {
   font-family: var(--playfair-disply-font);
   height: 100vh;
@@ -90,7 +98,7 @@ html::-webkit-scrollbar-thumb {
   font-family: var(--playfair-disply-font);
   line-height: 1.7;
 }
-.Home-section::before{
+/* .Home-section::before{
   content: '';
    left: 0;
    top: 0;
@@ -100,6 +108,14 @@ html::-webkit-scrollbar-thumb {
    z-index: -1;
    height: 100vh;
    width: 100%;
+} */
+.logo-heading{
+   font-family: var(--logo-font);
+   font-size: 30px;
+   transition: color 0.4s;
+}
+.logo-heading:hover{
+  color: var(--gold);
 }
  .Home-section .content h1 ,
 .Home-section .content a{
@@ -268,6 +284,8 @@ a.active {
 .special-section {
   background-color: #221f1a;
   padding: 32px;
+  border-top: 1px solid var(--gold);
+  border-bottom: 1px solid var(--gold);
 }
 .special-container {
   text-align: center;
@@ -287,6 +305,7 @@ a.active {
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
+
 }
 .slider-img {
   margin-bottom: 8px;
@@ -310,12 +329,12 @@ a.active {
 .previous-icon {
   position: absolute;
   left: 48px;
-  top: 106px;
+  top: 250px;
 }
 .after-icon {
   position: absolute;
   right: 48px;
-  top: 106px;
+  top: 250px;
 }
 /* ------------------------------------------ */
 
@@ -325,7 +344,7 @@ width: 100%;
 height: 500px;
 overflow: hidden;
 animation: zoonInOut 20s ease infinite;
-
+border-bottom: 1px solid var(--gold);
 position: relative;
 }
 .opening-img {
@@ -483,6 +502,8 @@ margin-bottom: 18px;
   border: none;
   font-size: 20px;  
   margin: 20px;
+  border: 1px solid var(--gold);
+
 }
 .boxes .reason-box i {
   color: var(--gold);
@@ -702,8 +723,8 @@ margin-bottom: 18px;
  .footer .newslatter form input:focus::placeholder {
    opacity: 0;
    transition: 0.4s;
- 
  }  
+
 
 /*---------------------------------------------ipad------------------------------------------------*/
 
@@ -754,7 +775,10 @@ margin-bottom: 18px;
   /* html {
     font-size: 55%;
   } */
-
+  header.sticky{
+    background-color: var(--bg-color);
+    border-bottom: 1px solid var(--gold);
+  }
   .header {
     padding: 1.5rem 2rem;
   }
