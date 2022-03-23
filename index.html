@@ -7,8 +7,22 @@
     <title>Online Restaurant project</title>
     <link rel="stylesheet" href="./homePage/style.css" />
     <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+  />
+    <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
     />
   </head>
   <body>
@@ -39,13 +53,13 @@
      </div>
   
     </section>
-    
+
 <!-- about section starts  -->
 <section class="about"  id="About_us">
   <h1 class="heading"> <span>about</span> us </h1>
   <div class="row">
       <div class="image">
-          <img src="../image/building2.jpg" alt=""style="width=20%;" >
+          <img src="./image/building2.jpg" alt=""style="width=20%;" >
       </div>
       <div class="content">
           <!-- <h3></h3> -->
@@ -56,144 +70,212 @@
       </div>
   </div>
 </section>
-<!-- about section ends -->
+
+<!-- special dishes for the week section starts-->
+<section class="special-section" id="Spical Offer">
+    <div class="special-container">
+      <p class="special-paragraph">Special for This Week</p>
+
+      <div class="slider">
+        <img
+          class="slider-img"
+          src="https://www.themealdb.com/images/media/meals/xrrtss1511555269.jpg"
+          alt="Main Meal Image"
+        />
+        <p class="slider-title">Chicken Ham and Leek Pie</p>
+        <p class="slider-subtilte">sub title</p>
+      </div>
+      <div class="slider">
+        <img
+          class="slider-img"
+          src="https://www.themealdb.com/images/media/meals/y4jpgq1560459207.jpg"
+          alt="dessert Image"
+        />
+        <p class="slider-title">Tunisian Orange Cake</p>
+        <p class="slider-subtilte">sub title2</p>
+      </div>
+      <div class="slider">
+        <img
+          class="slider-img"
+          src="https://www.thecocktaildb.com/images/media/drink/ib0b7g1504818925.jpg"
+          alt="Drink Image"
+        />
+        <p class="slider-title">big heading title3</p>
+        <p class="slider-subtilte">sub title3</p>
+      </div>
+      <a class="previous-icon"><i class="ri-arrow-left-s-line"></i></a>
+      <a class="after-icon"><i class="ri-arrow-right-s-line"></i></a>
+    </div>
+  </section>
+  <!-- special dishes for the week section Ends-->
+  <script src="./homePage/script.js"></script>
+</div>
+</section>
+
+<!-- opening  time section starts-->
+<section class="opening-section" id="Appointments">
+  <img class="opening-img" src="./image/opening-image.jpg" alt="" />
+  <div class="opening-overlay">
+    <p class="opening-heading">Opening Hours</p>
+    <p class="opening-subtitle">call for your order</p>
+
+    <div class="line-wrapper">
+      <div class="line left-line"></div>
+      <div class="inbetween-circle"></div>
+      <div class="line right-line"></div>
+    </div>
+    <div class="opening-times">
+      <div class="left-dates">
+        <p class="opening-days">Sunday to Thursday</p>
+        <p class="time opening-time">12:00</p>
+        <p class="time closing-time">22:00</p>
+      </div>
+      <div class="right-dates">
+        <p class="opening-days">Friday to Satarday</p>
+        <p class="time opening-time">15:00</p>
+        <p class="time closing-time">22:00</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- opening  time section Ends-->
 
 
     <!-- start why choose us section  -->
-       <section class="why-us" id="why-us">
-        <div class="container">
-          <div class="section-title">
-            <h2>Why Choose Our Restaurant?</h2>
+    <section class="why-us" id="why-choose-our-restaurant">
+      <div class="container">
+        <div class="section-title">
+          <h2>Why Choose Our Restaurant?</h2>
+        </div>
+       
+        <div class="boxes">
+          <div class="reason-box">
+            <i class="fa-solid fa-utensils"></i>
+            <h4>Main Deshise</h4>
+            <h5 class="counter">+ 500</h5>
           </div>
-         
-          <div class="boxes">
-            <div class="reason-box">
-              <i class="fa-solid fa-utensils"></i>
-              <h4>Main Deshise</h4>
-              <h5 class="counter">+ 500</h5>
-            </div>
-            <div class="reason-box">
-              <i class="fa-solid fa-user-group"></i>
-              <h4>Clients</h4>
-              <h5 class="counter">+ 1000</h5>
-            </div>
-            <div class="reason-box">
-              <i class="fa-solid fa-certificate"></i>
-              <h4>ISO</h4>
-              <h5 class="counter">+ 1</h5>
-            </div>
+          <div class="reason-box">
+            <i class="fa-solid fa-user-group"></i>
+            <h4>Clients</h4>
+            <h5 class="counter">+ 1000</h5>
+          </div>
+          <div class="reason-box">
+            <i class="fa-solid fa-certificate"></i>
+            <h4>ISO</h4>
+            <h5 class="counter">+ 1</h5>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
 <!-- about section ends -->
 <!-- start our chef section  -->
-<section class="our-chef" id = "our-chef">
-  <div class="container">
-  <div class="section-title">
-    <h2>Our Chef</h2>
+<section class="our-chef">
+<div class="container">
+<div class="section-title">
+  <h2>Our Chef</h2>
+</div>
+<div class="row">
+  <div class="chef-item">
+    <img src="./image/chef/chef1.jpg" alt="">
+    <div class="chef-item-info">
+      <h3>mark</h3>
+      <p>head chef</p>
   </div>
-  <div class="row">
-    <div class="chef-item">
-      <img src="./image/chef/chef1.jpg" alt="">
-      <div class="chef-item-info">
-        <h3>mark</h3>
-        <p>head chef</p>
-    </div>
-    </div>
-    <div class="chef-item">
-      <img src="./image/chef/chef2.jpg" alt="">
-      <div class="chef-item-info">
-        <h3>mark</h3>
-        <p>head chef</p>
-    </div>
-    </div>
-    <div class="chef-item">
-      <img src="./image/chef/chef3.jpg" alt="">
-      <div class="chef-item-info">
-        <h3>mark</h3>
-        <p>head chef</p>
-    </div>
-    </div>
-    </div>
   </div>
+  <div class="chef-item">
+    <img src="./image/chef/chef2.jpg" alt="">
+    <div class="chef-item-info">
+      <h3>mark</h3>
+      <p>head chef</p>
+  </div>
+  </div>
+  <div class="chef-item">
+    <img src="./image/chef/chef3.jpg" alt="">
+    <div class="chef-item-info">
+      <h3>mark</h3>
+      <p>head chef</p>
+  </div>
+  </div>
+  </div>
+</div>
 </section> 
 
-  <!-- start testimonal section  -->
-  <section class="testimonaial-section" id="testimonail">
-    <div class="container">
-      <div class="section-title">
-        <h2>What client says about us ?</h2>
-      </div>
-      <div class="testimonail-content">
-       <div class="single-testimonail">
-         <div class="cleint-info">
-             <img src="./image/testimonails/testimonials-1.jpg" alt="">
-           <div class="client-details">
-             <h6>andro</h6>
-             <span>Food spicalest</span>
-             <ul>
-               <li><i class="fa-solid fa-star"></i></li>
-               <li><i class="fa-solid fa-star"></i></li>
-               <li><i class="fa-solid fa-star"></i></li>
-               <li><i class="fa-solid fa-star"></i></li>
-               <li><i class="fa-solid fa-star"></i></li>
-             </ul>
-           </div>
-
-         <p>
-           <i class="fa-solid fa-quote-left"></i>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis impedit provident nihil accusamus. Reiciendis corporis odit incidunt quia. Placeat voluptate adipisci libero laborum quos explicabo totam?
-         </p>
-         </div>
-       </div>
-       <div class="single-testimonail">
-         <div class="cleint-info">
-           <div class="client-img">
-             <img src="./image/testimonails/testimonials-2.jpg" alt="">
-           </div>
-           <div class="client-details">
-             <h6>sharly</h6>
-             <span>Food spicalest</span>
-             <ul>
-               <li><i class="fa-solid fa-star"></i></li>
-               <li><i class="fa-solid fa-star"></i></li>
-               <li><i class="fa-solid fa-star"></i></li>
-               <li><i class="fa-solid fa-star"></i></li>
-               <li><i class="fa-solid fa-star-half-stroke"></i></li>
-             </ul>
-           </div>
-         <p>
-           <i class="fa-solid fa-quote-left"></i>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis impedit provident nihil accusamus. Reiciendis corporis odit incidunt quia. Placeat voluptate adipisci libero laborum quos explicabo totam?
-         </p>
-         </div>
-       </div>
-       <div class="single-testimonail">
-         <div class="cleint-info">
-           <div class="client-img">
-             <img src="./image/testimonails/testimonials-3.jpg" alt="">
-           </div>
-           <div class="client-details">
-             <h6>wile</h6>
-             <span>Food spicalest</span>
-             <ul>
-               <li><i class="fa-solid fa-star"></i></li>
-               <li><i class="fa-solid fa-star"></i></li>
-               <li><i class="fa-solid fa-star"></i></li>
-               <li><i class="fa-solid fa-star"></i></li>
-               <li><i class="fa-solid fa-star-half-stroke"></i></li>
-             </ul>
-           </div>
-         <p>
-           <i class="fa-solid fa-quote-left"></i>
-
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis impedit provident nihil accusamus. Reiciendis corporis odit incidunt quia. Placeat voluptate adipisci libero laborum quos explicabo totam?
-         </p>
-         </div>
-       </div>
-      </div>
+<!-- start testimonal section  -->
+<section class="testimonaial-section">
+  <div class="container">
+    <div class="section-title">
+      <h2>What client says about us ?</h2>
     </div>
+    <div class="testimonail-content">
+     <div class="single-testimonail">
+       <div class="cleint-info">
+           <img src="./image/testimonails/testimonials-1.jpg" alt="">
+         <div class="client-details">
+           <h6>andro</h6>
+           <span>Food spicalest</span>
+           <ul>
+             <li><i class="fa-solid fa-star"></i></li>
+             <li><i class="fa-solid fa-star"></i></li>
+             <li><i class="fa-solid fa-star"></i></li>
+             <li><i class="fa-solid fa-star"></i></li>
+             <li><i class="fa-solid fa-star"></i></li>
+           </ul>
+         </div>
+
+       <p>
+         <i class="fa-solid fa-quote-left"></i>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis impedit provident nihil accusamus. Reiciendis corporis odit incidunt quia. Placeat voluptate adipisci libero laborum quos explicabo totam?
+       </p>
+       </div>
+     </div>
+     <div class="single-testimonail">
+       <div class="cleint-info">
+         <div class="client-img">
+           <img src="./image/testimonails/testimonials-2.jpg" alt="">
+         </div>
+         <div class="client-details">
+           <h6>sharly</h6>
+           <span>Food spicalest</span>
+           <ul>
+             <li><i class="fa-solid fa-star"></i></li>
+             <li><i class="fa-solid fa-star"></i></li>
+             <li><i class="fa-solid fa-star"></i></li>
+             <li><i class="fa-solid fa-star"></i></li>
+             <li><i class="fa-solid fa-star-half-stroke"></i></li>
+           </ul>
+         </div>
+       <p>
+         <i class="fa-solid fa-quote-left"></i>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis impedit provident nihil accusamus. Reiciendis corporis odit incidunt quia. Placeat voluptate adipisci libero laborum quos explicabo totam?
+       </p>
+       </div>
+     </div>
+     <div class="single-testimonail">
+       <div class="cleint-info">
+         <div class="client-img">
+           <img src="./image/testimonails/testimonials-3.jpg" alt="">
+         </div>
+         <div class="client-details">
+           <h6>wile</h6>
+           <span>Food spicalest</span>
+           <ul>
+             <li><i class="fa-solid fa-star"></i></li>
+             <li><i class="fa-solid fa-star"></i></li>
+             <li><i class="fa-solid fa-star"></i></li>
+             <li><i class="fa-solid fa-star"></i></li>
+             <li><i class="fa-solid fa-star-half-stroke"></i></li>
+           </ul>
+         </div>
+       <p>
+         <i class="fa-solid fa-quote-left"></i>
+
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis impedit provident nihil accusamus. Reiciendis corporis odit incidunt quia. Placeat voluptate adipisci libero laborum quos explicabo totam?
+       </p>
+       </div>
+     </div>
+    </div>
+  </div>
 </section>
 <!-- start footer section  -->
 <footer class="footer" id="contact-us">
@@ -216,76 +298,85 @@
           <span>Email: info@example.com</span>
         </div>
       </div>
-      <div class="socail-icons">
-        <ul>
-          <li>
-            <a href="#facebook.com"
-              ><i class="fa-brands fa-facebook-f"></i
-            ></a>
-          </li>
-          <li>
-            <a href="twitter.com"><i class="fa-brands fa-twitter"></i></a>
-          </li>
-          <li>
-            <a href="#instagram.com"
-              ><i class="fa-brands fa-instagram"></i
-            ></a>
-          </li>
-          <li>
-            <a href="#linkedin.com"
-              ><i class="fa-brands fa-linkedin-in"></i
-            ></a>
-          </li>
-          <li>
-            <a href="skype.com"><i class="fa-brands fa-skype"></i></a>
-          </li>
-        </ul>
+      <div class="phone">
+        <i class="fa-solid fa-phone"></i>
+        <span>Phone: +1 5589 55488 55</span>
+      </div>
+      <div class="email">
+        <i class="fa-solid fa-envelope"></i>
+        <span>Email: info@example.com</span>
       </div>
     </div>
-    <div class="services">
-      <h2>Our services</h2>
-      <ul class="services-menu">
+    <div class="socail-icons">
+      <ul>
         <li>
-          <i class="fa-solid fa-angle-right"></i>
-          <span> graild food </span>
+          <a href="#facebook.com"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
         </li>
         <li>
-          <i class="fa-solid fa-angle-right"></i>
-          <span>rosted food</span>
+          <a href="twitter.com"><i class="fa-brands fa-twitter"></i></a>
         </li>
         <li>
-          <i class="fa-solid fa-angle-right"></i>
-          <span> sea food</span>
+          <a href="#instagram.com"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
         </li>
         <li>
-          <i class="fa-solid fa-angle-right"></i>
-          <span>desart</span>
+          <a href="#linkedin.com"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
         </li>
         <li>
-          <i class="fa-solid fa-angle-right"></i>
-          <span> drinks</span>
+          <a href="skype.com"><i class="fa-brands fa-skype"></i></a>
         </li>
       </ul>
     </div>
-    <div class="newslatter">
-      <h2>Our Newsletter</h2>
-      <p>
-        Tamen quem nulla quae legam multos aute sint culpa legam noster
-        magna
-      </p>
-     <form action="">
-        <input type="email" class="email" placeholder="E-mail" />
-        <button type="submit">Subscrip</button>
-      </form>
-    </div>
-  </div> 
-  <div class="credits">
-    <p>
-      © Copyright <strong class="footer-logo">Testy</strong> All Rights
-      Reserved
-    </p>
-    <p>Designed by <span>Team 12 </span></p>
   </div>
+  <div class="services">
+    <h2>Our services</h2>
+    <ul class="services-menu">
+      <li>
+        <i class="fa-solid fa-angle-right"></i>
+        <span> graild food </span>
+      </li>
+      <li>
+        <i class="fa-solid fa-angle-right"></i>
+        <span>rosted food</span>
+      </li>
+      <li>
+        <i class="fa-solid fa-angle-right"></i>
+        <span> sea food</span>
+      </li>
+      <li>
+        <i class="fa-solid fa-angle-right"></i>
+        <span>desart</span>
+      </li>
+      <li>
+        <i class="fa-solid fa-angle-right"></i>
+        <span> drinks</span>
+      </li>
+    </ul>
+  </div>
+  <div class="newslatter">
+    <h2>Our Newsletter</h2>
+    <p>
+      Tamen quem nulla quae legam multos aute sint culpa legam noster
+      magna
+    </p>
+   <form action="">
+      <input type="email" class="email" placeholder="E-mail" />
+      <button type="submit">Subscrip</button>
+    </form>
+  </div>
+</div> 
+<div class="credits">
+  <p>
+    © Copyright <strong class="footer-logo">Testy</strong> All Rights
+    Reserved
+  </p>
+  <p>Designed by <span>Team 12 </span></p>
+</div>
 </footer>
   </body>
 </html>
