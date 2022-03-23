@@ -17,7 +17,7 @@
 
 ul {
   list-style: none;
-  display: flex;
+  /* display: flex; */
 } 
 
 a {
@@ -438,6 +438,7 @@ a.active {
 .testimonaial-section .single-testimonail .client-details ul{
   align-items: center;
   justify-content: center;
+  display:flex;
 }
 .testimonaial-section .single-testimonail .cleint-info .client-details{
   padding: 15px;
@@ -503,7 +504,9 @@ a.active {
    font-size: 20px;
    color: var(--gold);
  }
- 
+ .socail-icons ul{
+  display: flex;
+ }
  .socail-icons ul li {
    margin-right: 10px;
    background-color: var(--bg-color);
