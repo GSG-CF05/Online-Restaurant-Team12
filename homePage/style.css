@@ -7,7 +7,6 @@
 * {
   padding: 0;
   margin: 0;
-  scroll-behavior: smooth;
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
@@ -63,9 +62,9 @@ input {
 }
 
 html {
-  overflow-x: hidden;
-  scroll-padding-top: 9rem;
-  scroll-behavior: smooth;
+  /* overflow-x: hidden; */
+  /* scroll-padding-top: 9rem; */
+  /* scroll-behavior: smooth; */
 }
 
 html::-webkit-scrollbar {
@@ -95,7 +94,6 @@ nav {
   height: 80px;
   width: 100%;
   background: rgba(0, 0, 0, 0.6);
-  justify-content: space-between;
 }
 .Home-section .home-btn {
   color: var(--white);
@@ -126,23 +124,23 @@ label.logo {
   font-size: 40px;
   padding-left: 50px;
 }
-nav ul {
+nav .nav-menu {
   float: right;
   margin-right: 20px;
 }
-nav ul li {
+nav .nav-menu li {
   display: block;
   margin: 70px 0;
   line-height: 30px;
 }
-nav ul li a {
+nav .nav-menu li a {
   font-size: 30px;
   color: white;
   padding: 7px 13px;
   border-radius: 3px;
   text-transform: uppercase;
 }
-#check:checked ~ ul {
+#check:checked ~ .nav-menu {
   left: 0;
 }
 a:hover {
@@ -166,7 +164,7 @@ a.active {
   background: none;
   color: rgba(197, 157, 95, 1);
 }
-ul {
+.nav-menu {
   position: fixed;
   width: 100%;
   height: 100vh;
@@ -259,7 +257,6 @@ ul {
 }
 .chef-item-info{
     background-color: var(--light-bg-color);
-
     color: var(--gold);
     margin-bottom: 50px;
     border-radius: 8px;
@@ -274,11 +271,12 @@ ul {
     border: 1px solid var(--gold);
 }
 .chef-item-info h3{
-    font-size: 16px;
+    font-size: 20px;
     text-transform: capitalize;
 }
 .chef-item-info p{
     text-transform: capitalize;
+    font-size: 18px;
 }
 .chef-item:hover .chef-item-info p{
     color: var(--white);
@@ -305,13 +303,13 @@ ul {
     font-size: 40px;
     padding-left: 50px;
   }
-  nav ul li a {
+  nav .nav-menu li a {
     font-size: 30px;
   }
   .checkbtn {
     display: block;
   }
-  ul {
+  .nav-menu {
     position: fixed;
     width: 100%;
     height: 100vh;
@@ -321,12 +319,12 @@ ul {
     text-align: center;
     transition: all 0.5s;
   }
-  nav ul li {
+  nav .nav-menu li {
     display: block;
     margin: 50px 0;
     line-height: 30px;
   }
-  nav ul li a {
+  nav .nav-menu li a {
     font-size: 20px;
   }
   a:hover,
@@ -334,13 +332,13 @@ ul {
     background: none;
     color: rgba(197, 157, 95, 1);
   }
-  #check:checked ~ ul {
-    left: 0;
+  #check:checked ~ .nav-menu {
+    left: 0px;
   }
 
-  html {
+  /* html {
     font-size: 55%;
-  }
+  } */
 
   .header {
     padding: 1.5rem 2rem;
@@ -628,15 +626,15 @@ ul {
   .checkbtn {
     display: none;
   }
-  nav ul li {
+  nav .nav-menu li {
     display: inline-block;
     line-height: 80px;
     margin: 0 5px;
   }
-  nav ul li a {
+  nav .nav-menu li a {
     font-size: 14px;
   }
-  ul {
+  .nav-menu {
     width: 78%;
     height: 13vh;
     position: initial;
@@ -725,7 +723,7 @@ ul {
 }
 .testimonaial-section .testimonail-content .single-testimonail .cleint-info p{
 line-height: 1.8;
- font-size: 18px;
+ font-size: 20px;
  width: 100%;
 
 }
