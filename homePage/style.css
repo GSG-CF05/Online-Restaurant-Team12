@@ -149,15 +149,15 @@ nav {
   border-radius: 40px;
   border: 2px solid var(--white);
   width: fit-content;
-  position: absolute;
+  /* position: absolute; */
   text-transform: uppercase;
-  left:50%;
+  /* left:50%; */
   transform: translate(-50%);
-  bottom: 20%;
+  /* bottom: 30%; */
   background-color: none;
   font-size: 22px;
   z-index: 100 ;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 .Home-section .home-btn:hover{
   background-color: var(--gold);
@@ -433,6 +433,7 @@ margin-bottom: 18px;
   display: flex;
   flex-wrap: wrap;
   background-color: var(--bg-color);
+ 
 }
 .chef-item img{
   width: 100%;
@@ -448,6 +449,8 @@ margin-bottom: 18px;
   background-color: var(--gold);
   font-family: var(--playfair-disply-font);
   color: var(--bg-color);
+   align-items: center;
+  justify-content: center;
 }
 .chef-item-info{
     background-color: var(--light-bg-color);
@@ -829,7 +832,7 @@ margin-bottom: 18px;
  
 }
 /*-----------------------------------lab--------------------------------*/
-@media (min-width: 821px){
+@media (min-width: 820px){
   label.logo {
     font-size: 30px;
     padding-left: 30px;
