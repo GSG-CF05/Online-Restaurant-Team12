@@ -70,6 +70,8 @@ function createOrderedFoodCard(q, n, im, p) {
     cardsData.forEach((e, i) => {
       if (name === cardsData[i].foodTitleTarget) {
         cardsData.splice(i, 1);
+        firstTotalPrice.textContent = parseInt(firstTotalPrice.textContent) - (parseInt(e.quantity) * parseInt(e.price))
+        secondTotalPrice.textContent = firstTotalPrice.textContent
       }
     })
     localStorage.setItem("cardsData", JSON.stringify(cardsData));
@@ -105,5 +107,5 @@ getFromLocalStorage();
 
 //! total price Function
 let total = items.reduce((c, n) => c + n);
-secondTotalPrice.textContent = `$${total}`;
-firstTotalPrice.textContent = `$${total}`;
+secondTotalPrice.textContent = `${total}$`;
+firstTotalPrice.textContent = `${total}$`;
