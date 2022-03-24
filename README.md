@@ -1,4 +1,4 @@
-##  💡[***Tasty***](https://gsg-cf05.github.io/Online-Restaurant-Team12/)
+##  💡[***Tasty***](https://gsg-cf05.github.io/Tasty-Online-Restaurant/)
 -----------------------------------------------
 
 ## ✧ Contents of Readme File:
@@ -13,21 +13,22 @@
 
 ------------------------------------------------------
 
-## ✧ Description of our website:
+## 💡 Description of our website:
 Tasty is an online restaurant app that made to make it easier for the customer to order food by showing the menu of the restaurant. In this app, customers can browse the menu, which includes many types of food, drinks, and desserts, choose the best food for them, order, and pay for it through the app.
 
 ------------------------------------------------------
 
 ## ✧ Links:
-- [Design ](https://www.figma.com/file/7QIDOwDTVVwfE6vIaXsoc3/wireframe?node-id=21%3A3)
-- [Figma link](https://www.figma.com/file/G8nDYDW4H3CYL4wHRIOVue/Online-Restaurant-App)
-- [Live link](https://gsg-cf05.github.io/Online-Restaurant-Team12/)
-- API documentation 
+- [Design ](https://www.figma.com/file/G8nDYDW4H3CYL4wHRIOVue/Online-Restaurant-App)
+- [Figma link](https://www.figma.com/file/7QIDOwDTVVwfE6vIaXsoc3/wireframe?node-id=21%3A3)
+- [Live link](https://gsg-cf05.github.io/Tasty-Online-Restaurant/)
+- [API Food](https://www.themealdb.com/api/json/v1/1/filter.php?i=chicken_breast)
+- [API Drink](https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=Ordinary_Drink)
+- [API dessert](https://www.themealdb.com/api/json/v1/1/filter.php?c=dessert)
 ------------------------------------------------------
 ## ✧ User journey:
 The user's journey in the site begins when he starts to search for our site on the internet and selects it from among all the available results.
  
-
   - If the user is new at first, he will go to the main section of the site, where he will find a welcome phrase and a simple description of the restaurant, and through it, he will be able to go to the main menu directly through our menu button available in it to display the basic classifications of the site, which are foods, sweets, and drinks, and specify what he wants from requests Based on the chosen classification, and then he will book the order and select the payment method through the Order Now button, Or go to the About Us section through the About Us button to learn about the nature of the restaurant and its services through the attached picture and the meals it offers through the attached description of the nature of the site’s work And its services, in addition to this, he will be able to access the main menu of the type of food he wants through the link available in it, and he will complete the rest of the steps of selecting the order and payment method as a normal user.
 
 
@@ -46,9 +47,7 @@ The user's journey in the site begins when he starts to search for our site on t
 
 ------------------------------------------------------
 ## ✧ WireFrames:
-![Home page](https://user-images.githubusercontent.com/61549252/159138601-271f2951-195a-4967-924b-97b0675dc424.png)
-![Category](https://user-images.githubusercontent.com/61549252/159138621-e89c8bb6-2d8f-4a26-8ecb-fe32460dc0fe.png)
-![Cart](https://user-images.githubusercontent.com/61549252/159138629-ba08b50b-1d1b-4fbc-96fa-3314c786c2df.png)
+![WireFrames](https://user-images.githubusercontent.com/61549252/159856003-cb95e5d0-651a-4d12-bf6d-950f042fbb18.png)
 
 -----------------------------------------------------  
 ## ✧ How to Get the App in Your Local Machine?
