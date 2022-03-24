@@ -42,6 +42,10 @@ function createOrderedFoodCard(q, n, im, p) {
   orderDown.appendChild(countNumber);
   countNumber.innerHTML = `${n}`;
 
+  let deleteBtn = document.createElement('button');
+  orderContainer.appendChild(deleteBtn);
+  deleteBtn.innerHTML = `Remove`;
+
   //! add class list
   orderContainer.classList.add("order-container");
   orderImgDiv.classList.add("order-img");
@@ -52,6 +56,24 @@ function createOrderedFoodCard(q, n, im, p) {
   orderDown.classList.add("order-down");
   countlabel.classList.add("count-label");
   countNumber.classList.add("count-number");
+  deleteBtn.classList.add('delete-btn');
+
+  //! delete button function 
+  deleteBtn.addEventListener('click', createDeleteBtn)
+  function createDeleteBtn(e) {
+    deleteTargetBtn = e.target.parentElement
+    deleteTargetBtn.remove()
+    let name =
+      e.target.previousElementSibling.firstChild.firstChild.textContent;
+    let cardsData = localStorage.getItem("cardsData");
+    cardsData = JSON.parse(cardsData);
+    cardsData.forEach((e, i) => {
+      if (name === cardsData[i].foodTitleTarget) {
+        cardsData.splice(i, 1);
+      }
+    })
+    localStorage.setItem("cardsData", JSON.stringify(cardsData));
+  }
 }
 
 //! get the data from local storage and insert it in the cart
