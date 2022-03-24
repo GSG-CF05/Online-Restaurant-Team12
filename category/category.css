@@ -264,10 +264,18 @@ label.logo {
   font-size: 24px;
   border-radius: 10px;
 }
+.checkout-btn:hover{
+  background-color: transparent;
+  border: 1px solid var(--gold);
+}
+
 .checkout-btn a:active,
 .checkout-btn a:visited,
 .checkout-btn a:link {
   color: var(--bg-color);
+}
+.checkout-btn a:hover{
+  color: var(--gold);
 }
 /* dropdown menu classes  */
 
@@ -298,8 +306,12 @@ label.logo {
   border-bottom: 1px solid #1a1814;
   font-size: 22px;
   padding: 8px 0px;
+  transition: background-color 0.5s ease-in-out;
 }
-
+.dropdown-menu ul li:hover{
+  background-color: var(--gold);
+  color: var(--light-bg-color);
+}
 /* responsive section  */
 @media (min-width: 415px) and (max-width: 768px) {
   .Home-section {
@@ -334,6 +346,7 @@ label.logo {
   }
   .category-btn {
     width: 32%;
+    cursor: pointer;
   }
   .foodcards-container {
     display: grid;
