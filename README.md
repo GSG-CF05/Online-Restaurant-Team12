@@ -23,7 +23,7 @@ Tasty is an online restaurant app that made to make it easier for the customer t
 - [Figma link](https://www.figma.com/file/7QIDOwDTVVwfE6vIaXsoc3/wireframe?node-id=21%3A3)
 - [Live link](https://gsg-cf05.github.io/Tasty-Online-Restaurant/)
 - [API Food](https://www.themealdb.com/api/json/v1/1/filter.php?i=chicken_breast)
-- [API Drink](https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=Ordinary_Drink)
+- [API Drink](https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=Cocktail)
 - [API dessert](https://www.themealdb.com/api/json/v1/1/filter.php?c=dessert)
 ------------------------------------------------------
 ## ✧ User journey:
