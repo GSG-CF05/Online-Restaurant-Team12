@@ -72,14 +72,14 @@ html::-webkit-scrollbar-thumb {
   border-radius: 5rem;
 }
 /* animation keyframes */
-@keyframes zoonInOut{
+/* @keyframes zoonInOut{
   0%,100%{
       transform: scale(1);
   }
   50%{
       transform: scale(1.1);
   }
-}
+} */
 /* ------------------------------------Section Home page ---------------------------*/
 header.sticky{
   background-color: var(--bg-color);
@@ -236,7 +236,7 @@ a.active {
   font-size: 2rem;
 }
 .about{
-  border-top:1px solid var(--gold);;
+  border-top:1px solid var(--gold);
 }
 .heading span {
   color: rgba(197, 157, 95, 1);
@@ -253,17 +253,13 @@ a.active {
   padding: 30px;
 }
 .home .content {
-  /* max-width: 60rem; */
-  text-align: left;
-
+  max-width: 60rem;
 }
 .about .row {
   display: flex;
   align-items: center;
   background: rgba(54, 51, 44, 1);
   flex-wrap: wrap;
-  padding: 60px;
-  margin: 60px;
 }
 .about .row .image {
   flex: 1 1 20rem;
@@ -274,6 +270,7 @@ a.active {
   margin-top: 15px;
   margin-bottom: 0px;
   border-radius: 10% ;
+  border: 2px solid var(--gold);
 }
 .about .row .content {
   flex: 1 1 45rem;
@@ -293,6 +290,7 @@ a.active {
   font-size: 1rem;
   color: #fff;
 }
+
 
 /*--------Special plate for the week section--------*/
 .special-section {
@@ -796,6 +794,9 @@ margin-bottom: 18px;
   .header {
     padding: 1.5rem 2rem;
   }
+  .header {
+    padding: 1.5rem 2rem;
+  }
 .abot{
   margin: 0px;
 }
@@ -886,13 +887,12 @@ margin-bottom: 18px;
   align-items: center;
   background: rgba(54, 51, 44, 1);
   flex-wrap: wrap;
-  border: 1px solid  var(--gold);
 }
 .about .row .image {
   flex: 1 1 20rem;
 }
 .about .row .image img {
-  width: 100%;
+  width: 70%;
   margin-left: 55px;
   margin-top: 15px;
   margin-bottom: 0px;
@@ -901,17 +901,15 @@ margin-bottom: 18px;
 
 }
 .about .row .content {
-  flex: 1 1 40rem;
+  flex: 1 1 45rem;
   padding: 12px;
-  padding-right: 30px;
 }
 .about .row .content p {
   font-size: 1.3rem;
   color: rgb(255, 255, 255);
   padding: 1rem 0;
   line-height: 1.8;
-  text-align: left;
-  text-transform: capitalize;
+  text-align: center;
 }
 .para1 {
   font-size: 30px;
