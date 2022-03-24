@@ -76,7 +76,7 @@ nav {
   background: rgba(0, 0, 0, 0.6);
   justify-content: space-between;
 }
-.Home-section .home-btn {
+.Home-section1 .home-btn {
   animation: zoonInOut 20s ease infinite;
   color: #ffffff;
   font-family: Lobster;
