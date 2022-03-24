@@ -73,11 +73,15 @@ input {
   height: 80px;
   display: flex;
   align-items: center;
+  flex-basis: 20%;
 }
 .order-img img {
   width: 100%;
   height: auto;
   border-radius: 50%;
+}
+.order-details {
+  flex-basis: 80%;
 }
 .order-name {
   font-size: 20px;
